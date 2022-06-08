@@ -1,5 +1,23 @@
 ![WATTIO](http://wattio.com.br/web/image/1204-212f47c3/Logo%20Wattio.png)
 
+### Como Fazer Funcionar a Solução:
+- Clone o repositório para uma pasta de Sua preferencia utilizando por exemplo:
+  $ git clone git@github.com:RickCruzz/backend.git
+
+- Acesse a pasta com os dados do repositório e monte uma imagem docker a partir do repositório
+ $ docker build -t desafio .
+
+- Após criar a imagem você pode verificar através do comando: 
+  $ docker image ls
+- Basta inicializar a imagem se tudo deu certo com o comando:
+$ docker run --name desafio -p 80:80 desafio
+
+- Se os logs começaram a aparecer basta acessar a página de documentação através do seu navegador de preferência:
+https:localhost:80/docs
+
+### MUITO OBRIGADO PELO TESTE! Foi Incrível e desafiador :)
+
+
 #### Descrição
 
 O desafio consiste em implementar um CRUD de filmes, utilizando [python](https://www.python.org/ "python") integrando com uma API REST e uma possível persistência de dados.
